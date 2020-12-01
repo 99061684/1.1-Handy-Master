@@ -1,0 +1,416 @@
+/* ************************ import styling ******************** */
+@font-face {
+    font-family: Archivo;
+    src: url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+}
+
+/* ************************ class styling ******************** */
+
+.body_container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.top {
+    position: relative;
+    height: 50px;
+}
+
+/* Navbar container */
+.topnav {
+    background-color: #222931;
+    position: absolute;
+    top: 40px;
+    width: 950px;    
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Links inside the navbar */
+.topnav .normal_link_pagina {
+    float: left;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown:hover, .topnav a:hover{
+    background-color: #ffe718;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;  
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    padding: 12px 16px;
+    background-color: inherit;
+    border: 0px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    color: #ffffff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222931;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 16px;
+    float: none;
+    color: grey;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_logo {
+    vertical-align: middle;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ffe718;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header_foto {
+    width: 100%;
+}
+
+.banner{
+    display: inline-block;
+    margin: 5px;
+    width: 300px; /* hier word de variabele opgeroepen */
+    height: 220px; /* hier word de variabele opgeroepen */
+}
+.container_banners1 {
+    background-image: url('../img/banner-1.jpg'); 
+    /* top: 10px;  */
+      
+}
+
+.container_banners2 {
+    background-image: url('../img/banner-2.jpg');   
+    /* top: 10px; 
+    left: 340px;   */
+}
+
+.container_banners3 {
+    background-image: url('../img/banner-3.jpg');  
+    /* top: 10px; 
+    left: 690px;    */
+}
+
+.container_banners3 a{
+    text-decoration: none;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(34,41,49,0.8);    
+}
+  
+/* .container_banners1:hover .container_banners2:hover .container_banners3:hover .overlay {
+    opacity: 0.5;
+} */
+
+.container_banners1:hover .overlay {
+    opacity: 1;
+}
+
+.container_banners2:hover .overlay {
+    opacity: 1;
+}
+
+.container_banners3:hover .overlay {
+    opacity: 1;
+}
+
+.text_banners {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    
+    text-align: center;
+    margin: 0px;    
+    align-self: center;
+    display: block;
+}
+
+.ribbon {
+    background-color: #ffe718;
+    height: 100px;
+    width: 100%;  
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.ribbon h1{
+    display: inline-block;
+    margin-right: 10px; 
+    margin-left: 300px; 
+
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.ribbon p{
+    display: inline-block;
+    margin-right: 150px;     
+    
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ribbon button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    background-color: #ffffff;       
+}
+
+.ribbon button:hover{
+    color: #ffffff;
+    border: none;
+    background-color: black;
+}
+
+.footer_foto {
+    width: 100%;
+}
+
+.tooltips_container {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tooltips_container a {
+    text-decoration: none;
+}
+
+.tooltip {
+    display: inline-block;
+    
+    color: black;
+    background-color: #ffe718;
+    padding: 10px;
+}
+
+.tooltip:hover {
+    color: #ffffff;
+    background-color: #222931;
+}
+
+.tooltip2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.text_tooltip {
+    float: right;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.tooltip h2 {
+    /* color: black; */
+    font-size: 20px;
+    margin: 0px;
+}
+
+.tooltip p {
+    /* color: black; */
+    font-size: 14px;
+    margin: 0px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.contact_over_ons_container {
+    border: 1px grey;
+    border-top-style: solid;
+    display: flex;
+}
+
+.contact_over_ons_container h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.over_ons, .contact {
+    margin-top: 20px;
+}
+
+.over_ons {
+    width: 400px;
+    margin-right: 200px;
+}
+
+.contact {
+    padding: 0px;
+}
+
+.contact ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.contact ul li p{
+    padding-left: 5px;
+}
+
+.contact_icon {
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    color: #aeb6be;
+}
+
+.footer_tekst {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+/* ************************ diensten.html styling ******************** */
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 0px;
+    list-style: none;
+}
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+}
+  
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\003e";
+}
+  
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+.text_diensten_par1, .text_diensten_par2, .footer_tekst {
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 500;
+}
+
+.text_diensten_par1 {
+    overflow: auto;
+}
+
+.text_diensten_par2 {
+    overflow: auto;
+}
+
+.diensten_pagina_text{
+    margin-bottom: 50px;
+}
+
+.diensten_pagina_text h1{
+    font-size: 34px;
+    font-weight: 600;
+}
+
+#nieuwbouw, #advies, #regelgeving {
+    color: yellow;
+}
+
+#nieuwbouw>span, #advies>span, #regelgeving>span{
+    display: none;
+    color: white;
+    background-color: #aeb6be;
+    width: 230px;
+    padding: 5px;
+    position: absolute;
+    opacity: 1;
+}
+
+#nieuwbouw:hover>span, #advies:hover>span, #regelgeving:hover>span{
+    display: block;
+}
+
+#nieuwbouw>span{
+    left: 785px;
+}
+
+#advies>span{
+    left: 870px;
+}
+
+#regelgeving>span{
+    left: 440px;
+}
+
+/* ************************ elements styling ******************** */
+* {
+    font-family: Archivo;
+}
+
+footer {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: #222931;
+}
+
+footer p{
+    position: absolute;
+    left: 80%;
+    color: white;
+}
